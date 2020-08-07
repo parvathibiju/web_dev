@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>hover image</title>
+        <style>
+            .unfiltered-pic {
+                 width: 25%;
+                 height: 25%;
+            }
+            
+            .filtered-pic {
+                width: 25%;
+                 height: 25%;
+                -webkit-filter: invert(.8);
+                filter: invert(.8);
+            }
+            </style>
+            
+    </head>
+    <body>
+        <a class="btn-0" href="http://www.google.com"> <img src='google.png' id="google" class='unfiltered-pic' >
+            <script type= "text/javascript">
+            var pics = document.getElementById('google')
+            pics.onmouseenter = function(event){pics.setAttribute('class', 'filtered-pic');}
+            pics.onmouseleave = function(event){pics.setAttribute('class','unfiltered-pic')}
+            pics.onclick = function(event){window.location.href = "http://www.google.com/";};
+            </script>  </a>
+        
+
+    </body>
+</html>
