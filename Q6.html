@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q6</title>
+</head>
+
+<body>
+    
+mark1:<input name="mark1" id="mark1" placeholder="enter mark for subject 1">
+mark2:<input name="mark1" id="mark2" placeholder="enter mark for subject 2">
+mark3:<input name="mark1" id="mark3" placeholder="enter mark for subject 3">
+mark4:<input name="mark1" id="mark4" placeholder="enter mark for subject 4">
+mark5:<input name="mark1" id="mark5" placeholder="enter mark for subject 5">
+<button onclick="assignGrade(document.getElementById('mark1').value,document.getElementById('mark2').value,document.getElementById('mark3').value,
+document.getElementById('mark4').value,document.getElementById('mark5').value)">GetGrade</button>
+<p id="ques6"></p>
+<script>
+    function assignGrade(m1,m2,m3,m4,m5) {
+        let text ="";
+        text += q6(m1);
+        text += q6(m2);
+        text += q6(m3);
+        text += q6(m4);
+        text += q6(m5);
+        document.getElementById("ques6").innerHTML = text;
+    }
+    function q6(val) {
+        let text = "";
+        if (parseInt(val) >90) {
+            return text += " For "+val+": got A,"+ "<br>"
+        } else if(80<parseInt(val) && parseInt(val)<=90) {
+            return text += "  For "+val+": got B," +"<br>"
+        }else if(75<parseInt(val) && parseInt(val)<=80) {
+            return text += " For "+val+": got C,"+"<br>"
+        }else if(70<parseInt(val) && parseInt(val)<=75) {
+            return text += " For "+val+": got D,"+"<br>"
+        }else if(60<parseInt(val) && parseInt(val)<=70) {
+            return text += " For "+val+": got E,"+"<br>"
+        }else if(parseInt(val)<=60) {
+            return text += " For "+val+": got F,"+"<br>"
+        }
+
+    }
+</script>
+</body>

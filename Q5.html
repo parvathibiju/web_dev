@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title> Q5</title>
+    </head>
+    
+    <body>
+        <button onclick="fizz()">Fizzzz</button>
+        <p id = "ques5"></p>
+
+        <script>
+
+            function fizz() {
+                let text = "";
+                for (let i=1; i<=100; i++) {
+                    if (i%3 ===0 && i%5 === 0) {
+                        text += 'FizzBuzz' + "<br>"
+                    } else if(i%3 ===0 && i%5 !== 0) {
+                        text += "Fizz<br>"
+                    } else if(i%3 !==0 && i%5 === 0) {
+                        text += "Buzz<br>"
+                    } else {
+                        text += i + "<br>"
+                    }
+                }
+                document.getElementById("ques5").innerHTML = text;
+            }
+        </script>
+    </body>
+</html>

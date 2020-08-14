@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Q4</title>
+    </head>
+    <body>
+        Enter date : <input type="text" id='date' name='date'>
+        <button  onclick="valDate(document.getElementById('date').value)">Validate Date</button>
+        <p id ="ques4"></p>
+        <script>
+            function valDate(dt)
+                    {
+                    var dateformat = /^(0?[1-9]|[12][0-9]|3[01])[\-](0?[1-9]|1[012])[\-]\d{4}$/;
+                    if(dt.match(dateformat))
+                    {
+
+                    var pdate = dt.split('-');
+                    var mm  = parseInt(pdate[0]);
+                    var dd = parseInt(pdate[1]);
+                    var yy = parseInt(pdate[2]);
+                    // Create list of days of a month [assume there is no leap year by default]
+                    var ListofDays = [31,28,31,30,31,30,31,31,30,31,30,31];
+                    if (mm==1 || mm>2)
+                    {
+                    if (dd>ListofDays[mm-1])
+                    {
+                    alert('Invalid date format!');
+                    return false;
+                    }
+                    }
+                    if (mm==2)
+                    {
+                    var lyear = false;
+                    if ( (!(yy % 4) && yy % 100) || !(yy % 400)) 
+                    {
+                    lyear = true;
+                    }
+                    if ((lyear==false) && (dd>=29))
+                    {
+                    alert('Invalid date format!');
+                    return false;
+                    }
+                    if ((lyear==true) && (dd>29))
+                    {
+                    alert('Invalid date format!');
+                    return false;
+                    }
+                    }
+                    }
+                    else
+                    {
+                    alert("Invalid date format!");
+                    document.form1.text1.focus();
+                    return false;
+                    }
+                    alert("Valid date format!");
+                    return true;
+                    }
+                                
+        </script>
+    </body>
+</html>
