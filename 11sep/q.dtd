@@ -1,0 +1,5 @@
+<!ELEMENT survey (isro,Region,Location,FeatureType,Rovdives,AreaCoveres,depthRange,DistancefromLand,ShippingActivityproxy,Items)>
+<!ELEMENT isro (#PCDATA)>
+<!ELEMENT Region (#PCDATA)>
+<!ELEMENT Location (#PCDATA)>
+<!ELEMENT FeatureType (#PCDATA)>

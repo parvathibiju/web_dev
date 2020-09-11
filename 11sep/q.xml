@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE note SYSTEM "note.dtd">
+<?xml-stylesheet type="text/xsl" href="q.xsl"?>
+<survey>
+    <isro>
+        <Region>Atlantic </Region>
+        <Location>Carter</Location>
+        <FeatureType> Seamount </FeatureType>
+        <Rovdives> 5 </Rovdives>
+        <AreaCoveres>2.78 </AreaCoveres>
+        <depthRange> 200 -2800 </depthRange>
+        <DistancefromLand> 630 </DistancefromLand>
+        <ShippingActivityproxy> 0.12 </ShippingActivityproxy>
+        <Items>  12.23 </Items>
+    </isro>
+    
+    <isro>
+        <Region> Atlantic </Region>
+        <Location>Knipnovich</Location>
+        <FeatureType> Seamount </FeatureType>
+        <Rovdives> 3 </Rovdives>
+        <AreaCoveres>2.18 </AreaCoveres>
+        <depthRange> 600 -2800 </depthRange>
+        <DistancefromLand> 1360 </DistancefromLand>
+        <ShippingActivityproxy> 0.23 </ShippingActivityproxy>
+        <Items>  2.29 </Items>
+    </isro>
+
+    <isro>
+        <Region> Indian </Region>
+        <Location>Coral</Location>
+        <FeatureType> Seamount </FeatureType>
+        <Rovdives> 5 </Rovdives>
+        <AreaCoveres>2.04 </AreaCoveres>
+        <depthRange> 500 -2800 </depthRange>
+        <DistancefromLand> 1610 </DistancefromLand>
+        <ShippingActivityproxy> 0.01 </ShippingActivityproxy>
+        <Items>  1.47 </Items>
+    </isro>
+  
+
+</survey>
